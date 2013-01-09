@@ -1,0 +1,38 @@
+<div id="contentTop"></div>
+<div id="content-wrap">
+	<div id="content" class="container_16 clearfix">
+
+		<div id="contentPortfolio" class="grid_16 fadehover">
+			
+			{{view Embersodes.BreadcrumbView currentLocationName="Episodes"}}
+
+			<h2>Episodes</h2>
+
+			{{#each episode in content}}
+				<div class="portfolio_item grid_5">
+					<a class="project_hoverVideo" {{action showEpisode episode href=true}}></a>
+					<img {{bindAttr src="episode.smallImageSrc" alt="episode.title"}} />
+					<h5>{{episode.title}}</h5>
+					<p>{{episode.shortDescription}}</p>
+					<a class="textLink" {{action showEpisode episode href=true}}>Watch episode</a>
+				</div>
+			{{/each}}
+
+			<!-- add the "right" class to every third item -->
+		</div>
+		
+		<div id="pagination" class="grid_16">
+			<span class="current">1</span>
+			<!--<ul>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">4</a></li>
+				<li><a href="#">5</a></li>
+				<li><a href="#">6</a></li>
+				<li><a href="#">7</a></li>
+				<li><a href="#">8</a></li>-->
+			</ul>
+		</div>
+
+	</div>
+</div>

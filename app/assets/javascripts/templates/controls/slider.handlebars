@@ -1,0 +1,32 @@
+<div class="coda-slider-wrapper">
+	<div class="coda-slider preload">
+		{{#each panel in view.content}}
+			<div class="panel">
+				<div class="panel-wrapper">
+					<h2 class="title">{{panel.index}}</h2>
+					{{#if panel.heading}}
+						<h1 {{bindAttr class="panel.textClass"}}>{{{panel.heading}}}</h1>
+					{{/if}}
+					{{#if panel.title}}
+						<h3 {{bindAttr class="panel.textClass"}}>{{{panel.title}}}</h3>
+					{{/if}}
+					
+					{{#if panel.text}}
+						<p {{bindAttr class="panel.textClass"}}>{{{panel.text}}}</p>
+					{{/if}}
+					
+					{{#if panel.buttonText}}
+						<a class="linkButton" {{bindAttr href="panel.buttonHref"}}>{{panel.buttonText}}</a>
+					{{/if}}
+					
+					{{#if panel.attribution}}
+						<div class="attribution-wrap"><div class="attribution">{{{panel.attribution}}}</div></div>
+					{{/if}}
+
+					<img {{bindAttr src="panel.imageSrc" alt="panel.imageAlt"}} />
+				</div>
+			</div>
+		{{/each}}
+	</div>
+</div>
+

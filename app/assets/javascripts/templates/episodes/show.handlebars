@@ -1,0 +1,101 @@
+<div id="contentTop"></div>
+<div id="content-wrap">
+	<div id="content" class="container_16 clearfix">
+		
+		<!-- BEGIN LEFT CONTENT -->
+		<div id="contentLeft" class="grid_15">
+			{{view Embersodes.BreadcrumbView currentLocationNameBinding="title"}}
+			
+			<h2>{{title}}</h2>
+			<div class="entryHead">
+				{{#if postedTime}}
+					Posted in <a class="category" rel="">Design</a> on {{postedTime}}
+				{{else}}
+					COMING SOON
+				{{/if}}
+				<a class="comments" rel="">23 Comments</a></div>
+
+			{{view Embersodes.VideoView videoSrcBinding="videoSrc"}}
+			<p>{{shortDescription}}</p>
+
+			<div class="tags">
+				<strong>Tags:</strong> <a class="tag" rel="">Design</a><a class="tag" rel="">Lab</a><a class="tag" rel="">Flash</a><a class="tag" rel="">iPhone</a>
+				
+				<a class="share" rel=""><strong>TELL A FRIEND</strong></a>
+				<a class="share twitter" rel="">Twitter</a>
+				<a class="share facebook" rel="">Facebook</a>
+				
+			</div>	<!-- close .tags -->
+			<!-- end Entry 01 -->
+
+			<div class="lineHor"></div>
+			
+			<h4>Comments</h4>&nbsp;
+			<!-- FIRST COMMENT -->
+			<div id="authorComment1">
+				<div id="gravatar1" class="grid_2">
+					<img src="assets/gravatar.png" alt="" />
+				</div>	<!-- close #gravatar -->
+				<div id="commentText1">
+					<span class="replyHead">by<a class="author" rel="">Admin</a>on February 13, 2010 at 8:32 pm</span>
+					<p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+				</div>	<!-- close #commentText -->
+				<div id="quote1">
+					<a class="quote" rel=""><strong>Quote this Comment</strong></a>
+				</div>	<!-- close #quote -->
+			</div>	<!-- close #authorComment -->
+			<!-- END FIRST COMMENT -->
+			
+			<!-- SECOND COMMENT (REPLIED) -->
+			<div id="authorComment2">
+				<div id="gravatar2" class="grid_2">
+					<img src="assets/gravatar.png" alt="" /><!--a class="reply" rel="">Reply</a-->
+				</div>	<!-- close #gravatar -->
+				<div id="commentText2">
+					<span class="replyHead">by<a class="author" rel="">John Doe</a>on February 13, 2010 at 8:32 pm</span>
+					<p>Quoted:</p>
+					<p class="quoteText">"Lorem Ipsum has been the industry's standard dummy text ever since the 1500, when an unknown printer took a galley of type and scrambled it to make a type specimen book."</p>
+					<p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500, when an unknown...</p>
+				</div>	<!-- close #commentText -->
+				<div id="quote2">
+					<a class="quote" rel=""><strong>Quote this Comment</strong></a>
+				</div>	<!-- close #quote -->
+			</div>	<!-- close #authorComment -->
+			<!-- END SECOND COMMENT (REPLIED) -->
+			
+			<!-- THIRD COMMENT -->
+			<div id="authorComment3">
+				<div id="gravatar3" class="grid_2">
+					<img src="assets/gravatar.png" alt="" /><!--a class="reply" rel="">Reply</a-->
+				</div>	<!-- close #gravatar -->
+				<div id="commentText3">
+					<span class="replyHead">by<a class="author" rel="">Jane Doe</a>on February 13, 2010 at 8:32 pm</span>
+					<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+				</div>	<!-- close #commentText -->
+				<div id="quote3">
+					<a class="quote" rel=""><strong>Quote this Comment</strong></a>
+				</div>	<!-- close #quote -->
+			</div>	<!-- close #authorComment -->
+			<!-- END THIRD COMMENT -->
+			
+			<!-- LEAVE REPLY -->
+			<div id="respond" class="grid_15">
+				<h4>Leave a Reply</h4>
+				<form id="commentform" method="post" action="#">
+
+					<p><input type="text" tabindex="1" size="22" value="" id="author" class="text_input" name="author"/>
+						<label for="author"><strong class="leftSpace">Your Name (required)</strong></label></p>
+
+					<p><input type="text" tabindex="2" size="22" value="" id="email" class="text_input" name="email"/>
+						<label for="email"><strong class="leftSpace">Email (will not be published but required)</strong></label></p>
+
+					<p><textarea tabindex="4" class="text_area" rows="7" cols="86" id="comment" name="comment"></textarea></p>
+
+					<p><input type="submit" value="Add Comment" tabindex="5" id="submit" class="button" name="submit"/></p>
+				</form>
+			</div>	<!-- close respond -->
+			<!-- END LEAVE REPLY -->
+			
+		</div>	<!-- end #contentLeft .grid_10 -->
+	</div>	<!-- end #content -->
+</div>	<!-- end #content-wrap -->

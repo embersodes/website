@@ -1,0 +1,50 @@
+<div id="contentTop"></div>
+<div id="content-wrap">
+	<div id="content" class="container_16 clearfix">
+
+		<div id="contentLeft" class="grid_10">
+			{{view Embersodes.BreadcrumbView currentLocationName="Contact"}}
+
+			<h2>Contact</h2>
+			<p>Got an idea for a future episode, or a question or comment for us?  Or need some help with your awesome project?  Drop us a line... we'd love to hear from you!</p>
+
+			<div id="contactForm" class="grid_10">
+
+				<form id="ajax_contactform" method="post" action="#">
+
+					<p>
+						<input type="text" tabindex="1" size="22" value="" id="name" class="text_input required" name="contactname"/>
+						<label for="name"><strong class="leftSpace">Your Name (required)</strong></label>
+					</p>
+
+					<p>
+						<input type="text" tabindex="2" size="22" value="" id="email" class="text_input required" name="contactemail"/>
+						<label for="email"><strong class="leftSpace">Email (required)</strong></label>
+					</p>
+
+					<p>
+						<label><strong class="leftSpace n">Message (required)</strong></label>
+						<textarea tabindex="4" rows="7" cols="86" id="contactmessage" class="text_area required" name="contactmessage"></textarea>
+					</p>
+
+					<p><input type="submit" value="Send" tabindex="5" id="submit" class="button" name="submit"/></p>
+				</form>
+			</div>
+
+		</div>
+
+		<div id="contentRight" class="grid_5">
+
+			<div class="getInTouch right">
+				<h6>Get Connected</h6>
+				<p>Come follow us to stay up to date on all the latest Ember.js and Embersodes news!</p>
+				<ul>
+					<li class="twitterContact"><strong>TWITTER</strong><br/><a href="https://twitter.com/embersodes">@embersodes</a></li>
+					<li class="linkedinContact"><strong>LINKED IN</strong><br/><a href="http://www.linkedin.com/pub/christopher-sansone/52/224/449/">Chris's Profile</a></li>
+					<li class="rssContact"><strong>RSS</strong><br/><a href="">RSS Feed</a></li>
+				</ul>
+
+			</div>
+		</div>
+	</div>
+</div>

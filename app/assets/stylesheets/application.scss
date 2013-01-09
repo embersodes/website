@@ -1,0 +1,94 @@
+/*
+ *= require reset
+ *= require 960
+ *= require screen
+ *= require coda-slider-2.0
+ *= require jqueryslidemenu
+ *= require prettyPhoto
+ *= require skins/skin1
+ *= require video-js
+ *= require_self
+ *= require_tree .
+ */
+
+$dark-text: #333;
+
+.panel-wrapper {
+
+	h3 {
+		width: 500px;
+		margin-top: 140px;
+
+		&.dark-text {
+			color: $dark-text;
+		}
+	}
+
+	p {
+		width: 500px;
+		
+		&.dark-text {
+			color: $dark-text;
+		
+			a {
+				color: $dark-text;
+			}
+		}
+		
+	}
+	
+
+	div.attribution-wrap {
+		position: absolute;
+		margin-top: 356px;
+		width: 940px;
+	}
+	
+	div.attribution {
+		float: right;
+		color: #CCC;
+		background-color: #333;
+		font-size: 8pt;
+		padding: 2px;
+		opacity: 0.8;
+		
+		a {
+			color: #CCC;
+		}
+	}
+
+	h1 {
+		height: 40px;
+		width: 600px;
+		position: absolute;
+		margin-top: 50px;
+		margin-left: 100px;
+		color: #fff;
+		font-size: 24pt;
+		font-weight: bold;
+		
+		&.dark-text {
+			color: $dark-text;
+		}
+	}
+
+	a.linkButton {
+		text-indent: 12px;
+		color: #333;
+		font-size: 13pt;
+		text-decoration: none;
+		padding-top: 9px;
+		font-weight: bold;
+		height: 38px;
+		margin-top: 262px;
+	}
+}
+
+img.moderator {
+	padding-left: 40px;
+}
+
+div.socialRight {
+	width: 105px;
+	margin-left: 70px;
+}

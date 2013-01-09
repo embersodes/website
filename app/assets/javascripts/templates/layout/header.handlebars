@@ -1,0 +1,24 @@
+<div id="header-wrap">
+
+	<div id="header" class="container_16 clearfix">
+
+		<div class="logo">
+			<h1><a title="embersodes" id="logo" {{action goHome href=true}}>embersodes</a></h1>
+		</div>
+
+		<div id="siteSearchForm">
+			{{view Embersodes.SearchInputView}}
+		</div>
+
+		<div id="topnav" class="jqueryslidemenu">
+			<ul>
+				<li><a class="currentHome" {{action goHome href=true}}>Home</a></li>
+				<li><a class="navEffect" {{action goToEpisodes href=true}}>Episodes</a></li>
+				<li><a class="navEffect" {{action goToAbout href=true}}>About</a></li>
+				<li><a class="navEffect" {{action goToContact href=true}}>Contact</a></li>
+			</ul>
+			<br style="clear:left" />
+		</div>
+
+	</div>
+</div>

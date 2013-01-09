@@ -1,0 +1,5 @@
+{{#if videoSrc}}
+<video class="video-js vjs-default-skin" controls preload="auto" width="894" height="560" data-setup="{}" {{bindAttr poster="view.imageSrc"}}>
+  <source {{bindAttr src="view.videoSrc" type="view.mimeType"}} />
+</video>
+{{/if}}
